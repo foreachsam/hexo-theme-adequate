@@ -1,0 +1,78 @@
+
+
+				<div class="row panel-content panel-archive-list">
+					<h2 class="panel-archive-title"><%= panel_title %></h2>
+					<div class="box-archive-list">
+						<ul class="archive-list">
+<%
+	page.posts.each(function(article) {
+		var target = '';
+		var url = article.path;
+		if (article.link) {
+			url = article.link;
+			target = ' target="_blank"';
+		}
+		var title = article.title;
+		if (!title) {
+			title = 'No Title';
+		}
+
+		var description = article.description;
+
+		if (!description) {
+			description = article.content;
+		}
+
+		var image = article.image;
+
+		if (!image) {
+			image = '';
+		}
+%>
+
+							<li class="box-archive-item" itemscope itemtype="http://schema.org/Article" >
+								<div class="card small">
+									<div class="card-image waves-effect waves-block waves-light">
+										<div style="padding:5px">
+<%
+	if (image) {
+%>
+											<img class="activator" src="<%- image %>">
+<%
+	}
+%>
+										</div>
+									</div>
+									<div class="card-content">
+
+										<span class="card-title activator grey-text text-darken-4"><a href="<%= url_for(url) %>" itemprop="url" <%- target %>><span  class="archive-item-title" itemprop="name"><%= title %></span></a><i class="material-icons right">more</i></span>
+
+
+									</div>
+									<div class="card-reveal">
+
+
+										<span class="card-title grey-text text-darken-4"><%= title %><i class="material-icons right">close</i></span>
+
+										<article class="post-item" itemscope itemtype="http://schema.org/Article"><div class="content post-item-content" itemprop="articleBody"><%- description %></div></article>
+										<p class="box-archive-item-date"><a href="<%- url_for(url) %>"><span class="archive-item-date" itemprop="datePublished" content="<%= date(page.date) %>"><%= date(article.date) %></span></a></p>
+									</div>
+								</div>
+
+							</li>
+
+<%
+	});
+%>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				<div class="panel-archive-nav">
+					<div class="box-archive-nav">
+<%- partial('_widget/archive-nav') %>
+					</div>
+				</div>

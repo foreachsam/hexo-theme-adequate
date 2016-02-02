@@ -1,0 +1,68 @@
+
+.box-archive-list
+	//debug
+	margin-top: 10px;
+	//border: 1px solid blue
+
+.box-archive-item
+	float: left
+	width: 280px
+	margin-right: 10px
+	margin-left: 10px
+
+	@media screen and (max-width: trigger-width)
+		float: none
+		width: 98%
+
+.box-archive-item-date
+	//position
+	position: relative
+	float: right
+
+.panel-archive-index-title
+	margin-bottom: 20px
+
+
+.box-archive-index
+	//margin: 0 auto
+	//width: 90%
+
+	//debug
+	//border: 1px solid blue
+
+
+
+[class*='col-']
+	float: left
+	padding: 0 5px
+
+	+:first-child
+		padding: 0 5px 0 0
+
+	+:last-child
+		padding: 0 0 0 5px
+
+
+.box-archive-index .col
+	width: 32.333%
+
+	h3
+		border-bottom: border-default
+		padding-bottom: block-10
+		margin-bottom: block-20
+		text-transform: uppercase
+		font-size: font-small
+		letter-spacing: 2px
+
+	ul
+		padding-left: 15px
+		line-height: 2
+
+	span
+		font-size: font-small
+		position: relative
+		top: -1px
+		color: color-grey
+
+	span:before
+		content: " - "
