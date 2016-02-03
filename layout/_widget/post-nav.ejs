@@ -2,7 +2,7 @@
 <%
 	if (page.prev) {
 %>
-					<a href="<%- url_for(config.root + page.prev.path) %>" title="<%-page.prev.title %>">&larr; Prev</a>
+					<a class="btn-floating  waves-effect waves-light red lighten-2" href="<%- url_for(config.root + page.prev.path) %>" title="<%-page.prev.title %>"><i class="material-icons">chevron_left</i></a>
 <%
 	}
 %>
@@ -10,7 +10,7 @@
 <%
 	if (page.next) {
 %>
-					<a href="<%- url_for(config.root + page.next.path) %>" title="<%-page.next.title %>">Next &rarr;</a>
+					<a class="btn-floating  waves-effect waves-light red lighten-2" href="<%- url_for(config.root + page.next.path) %>" title="<%-page.next.title %>"><i class="material-icons">chevron_right</i></a>
 <%
 	}
 %>
