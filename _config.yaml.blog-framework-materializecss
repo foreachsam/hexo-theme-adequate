@@ -24,4 +24,4 @@ materializecss_css: https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/cs
 velocity_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js
 velocity_ui_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js
 
-list_image_src: /blog-framework-materializecss/asset/img/logo.png
+list_image_src: /blog-framework-materializecss/article/asset/img/logo.png
