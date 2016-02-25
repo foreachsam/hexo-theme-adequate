@@ -3,7 +3,6 @@ style: asset/css/style.css
 logo: asset/img/logo.png
 image_src: asset/img/logo.png
 favicon: asset/img/favicon.png
-list_image_src: asset/img/logo.png
 
 menu:
 	Home: /
@@ -21,3 +20,5 @@ materializecss_js: https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/
 materializecss_css: https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css
 velocity_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js
 velocity_ui_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js
+
+list_image_src: /asset/img/logo.png
