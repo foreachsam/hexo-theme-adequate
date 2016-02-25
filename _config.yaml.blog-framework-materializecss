@@ -7,6 +7,7 @@ favicon: asset/img/favicon.png
 menu:
 	Home: /blog-framework-materializecss/article/
 	Sitemap: find/archive/
+	Materialize: http://materializecss.com/
 #	Index: find/tag/index/
 #	Page: page/
 
@@ -16,6 +17,8 @@ rss: atom.xml
 
 #use_cdn: false
 use_cdn: true
-jquery_js: //cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js
+jquery_js: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js
 materializecss_js: https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js
 materializecss_css: https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css
+velocity_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js
+velocity_ui_js: https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js
