@@ -3,6 +3,7 @@ style: asset/css/style.css
 logo: asset/img/logo.png
 image_src: asset/img/logo.png
 favicon: asset/img/favicon.png
+list_image_src: asset/img/logo.png
 
 menu:
 	Home: /
