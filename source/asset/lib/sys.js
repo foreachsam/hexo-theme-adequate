@@ -11,11 +11,15 @@
 		var btnTop = '.ui-btn-top';
 		var btnTopHide = '.ui-btn-top-hide';
 
+		//$(btnTopHide).hide();
+
 		$(document).on('click', btnTop, function(evt) {
+			evt.preventDefault();
 			ui.scrollToTop();
 		});
 
 		$(document).on('click', btnTopHide, function(evt) {
+			evt.preventDefault();
 			ui.scrollToTop();
 		});
 
