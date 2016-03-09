@@ -7,7 +7,7 @@ favicon: asset/img/favicon.png
 menu:
 	Home: /blog-framework-materializecss/article/
 	Sitemap: find/archive/
-	Materialize: http://materializecss.com/
+	Materialize: https://materializecss.com/
 	MaterialIcons: https://design.google.com/icons/
 #	Index: find/tag/index/
 #	Page: page/
